@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Этап 1. Создайте верстку элементов, которые будут статичны (неизменны).  -->
+    <div class="form-container">
+        <h2 class="form-titile">Введите данные студента</h2>
+        <p class="form-mistake">Вводите все правильно!</p>
+        <form class="form" action="#" method="post">
+            <label for="">Введите имя</label>
+            <input required class="input inp-name" type="text">
+            <label for="">Введите название факультета</label>
+            <input required class="input inp-fuculty" type="text">
+            <label for="">Введите дату рождения</label>
+            <input required class="input inp-birth" type="date">
+            <label for="">Введите год поступления</label>
+            <input required class="input inp-edu" type="number" max="2023" min="2000">
+            <button class="form-btn">Отправить</button>
+
+        </form>
+    </div>
+    <h2>Полный список студентов с возможностью сортировки</h2>
+    <div class="tabel-wrapper">
+        <div class="form-filter">
+            <form class="form form-find" action="#">
+                <label for="">Введите ФИО для поиска</label>
+                <input class="find-name" type="text" placeholder="ФИО">
+
+                <label for="">Введите факультет для поиска</label>
+                <input class="find-faculty" type="text" placeholder="Факультет">
+
+
+                <label for="">Введите дату рождения для поиска</label>
+                <input class="find-birth" type="date" placeholder="Год рождения">
+
+                <label for="">Введите год поступления для поиска</label>
+                <input class="find-year" type="number" min="2000" max="2023" placeholder="Год поступления">
+                <button class="btn find-btn">Применить фильтры</button>
+                <button class="btn refind-btn">Вернуть всех студентов</button>
+            </form>
+
+
+        </div>
+
+        <table class="st-tabel">
+            <tr>
+                <th class="th fullName"> Ф. И. О. студента.</th>
+                <th class="th faculty">Факультет.</th>
+                <th class="th birthDate">Дата рождения и возраст</th>
+                <th class="th yearsOfEducation">Годы обучения и номер курса</th>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

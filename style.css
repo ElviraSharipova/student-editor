@@ -1,0 +1,36 @@
+.st-tabel {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.st-row {
+    color: aqua;
+}
+
+.form {
+    /* margin: 0 auto; */
+    margin-left: 100px;
+    min-height: 200px;
+    max-width: 200px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.th {
+    cursor: pointer;
+}
+
+.tabel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
